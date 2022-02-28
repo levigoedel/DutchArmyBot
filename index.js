@@ -48,6 +48,14 @@ client.on("ready", async () =>{
         return message.channel.send("56789");
     }
 
+    else if (command === `ticket/close`) {
+        return message.channel.send("Dit ticket wordt gesloten over 2 uur tot 2 dagen. Stuur =ticket/close/annuleer om het sluiten te annuleren.");
+    }
+
+    else if (command === `ticket/close/annuleer`) {
+        return message.channel.send("Sluiten van ticket geannuleerd");
+    }
+
 });
 
 client.login(process.env.token);
