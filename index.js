@@ -22,7 +22,7 @@ client.on("ready", async () =>{
  client.on("messageCreate", async message => {
     var prefix = botConfig.prefix;
 
-    if(message.author.bot) return;
+    //if(message.author.bot) return;
     if(message.channel.type === "dm") return;
     if (!message.content.startsWith(prefix)) return;
   
